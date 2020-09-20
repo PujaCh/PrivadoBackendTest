@@ -1,0 +1,25 @@
+{
+    "type": $template.type,
+    "entity": $template.entity,
+    "customerId": $template.customerId,
+    "law": $template.law,
+    "fields":[
+		#foreach( $field in $template.fields )
+		"field":$field.field,
+		"label":$field.label,
+		"data_type":$field.data_type,
+		"default": $field.default,
+    	"field_type": $field.data_type,
+    	"field_type_label": $field.field_type_label,
+    	"is_removable": $field.is_removable,
+    	"mandatory": $field.mandatory
+    	#if($field.options_list)
+			{,"options_list":$field.options_list }
+		#if($field.options_url)
+			{,"options.options_url":{"url": $options.options_url.url,
+                "request_type": $options.options_url.request_type}}
+		#end
+		#end
+		#end
+	]
+}
