@@ -38,5 +38,8 @@ Below is the explanation of the code according to the requirement:
 - For this developed a getTemplateById() in controller to fetch the particular "customer_id" entity from the db.Validations considered: The customer_id should be numeric and developed a simple Apache Velocity Template Engine to check that the customer_id template stored in the db matched the template which is global and if the customer_id already exists return HttpStatusCode 400
 
 Unit Test Cases:
-1. Service Layer - Used junit and mockito for testing the service class and mocking the dao layer
-2. Controller layer - Used junit and mockito for testing the conttoller class and mocking the service layer
+1. Service Layer - Used junit and mockito for testing the service class and mocking the dao layer.
+2. Controller layer - Used junit and mockito for testing the conttoller class and mocking the service layer.
+
+To refer to Apache Velocity providing the below link:
+https://velocity.apache.org/engine/2.0/user-guide.html
